@@ -29,8 +29,4 @@ jobs:
       - name: Run unit tests with nose
         run: |
           pip install nose
-          nosetests -v --with-spec --spec-color --with-coverage --cover
-
-
-EDF
-OF
+          nosetests -v --with-spec --spec-color --with-coverage --cover-package=app
